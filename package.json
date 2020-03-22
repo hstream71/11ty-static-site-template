@@ -13,6 +13,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "push": "git add -A & git commit -m \"wip\" & git push",
     "dummy": ""
   },
   "keywords": [],
