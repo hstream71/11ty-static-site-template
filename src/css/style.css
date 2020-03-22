@@ -1,24 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700,400italic);
 body {
-    font-family: sans-serif
+  background-color: blueviolet;
+  background-color: #fefefe;
+  margin: 0px auto;
+  padding: 0px;
+  max-width: 900px;
+  font-family: 'Vollkorn', serif;
+  border2: 1px solid #ccc;
 }
 
-#infinite-list {
-    /* We need to limit the height and show a scrollbar */
-    width: 200px;
-    height: 300px;
-    overflow: auto;
-  
-    /* Optional, only to check that it works with margin/padding */
-    margin: 30px;
-    padding: 20px;
-    border: 10px solid black;
-  }
-  
-  /* Optional eye candy below: */
-  li {
-    padding: 10px;
-    list-style-type: none;
-  }
-  li:hover {
-    background: #ccc;
-  }
+.post-title {
+  font-weight: bold;
+}
+
+.post-category {
+  font-weight: normal;
+}
+
+.post-distance {
+  font-weight: bold;
+}
+
+.post-hide {
+  font-weight: normal;
+}
+
+.day {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+main {
+  max-width: 600px;
+}
+
+article {
+  border: 1px solid rgb(255, 196, 0);
+  margin: 10px 0;
+}
+
+.content-container {
+  display: relative;
+}
+
+article .title {
+  font-weight: 500;
+  font-family: 'Vollkorn', serif;
+}
+
+article .content {
+  font-weight: 500;
+  font-family: 'Open+Sans', sans-serif;
+}
