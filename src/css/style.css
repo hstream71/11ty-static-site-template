@@ -1,13 +1,32 @@
+/* Fonts */
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300);
 @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700,400italic);
+
+/* Main */
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
 body {
-  background-color: blueviolet;
   background-color: #fefefe;
-  margin: 0px auto;
-  padding: 0px;
-  max-width: 900px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #333;
   font-family: 'Vollkorn', serif;
-  border2: 1px solid #ccc;
+  border: 2px solid black;
+}
+
+.page-container {
+  display: relative;
+  max-width: 800px;
+}
+
+main {
+  max-width: 600px;
 }
 
 button.post-tag {
@@ -26,14 +45,6 @@ button.post-tag-on {
 
 button.post-tag-off {
   background-color: grey;
-}
-
-.content-container {
-  display: relative;
-}
-
-main {
-  max-width: 600px;
 }
 
 .location {
@@ -88,4 +99,22 @@ article .title {
 article .content {
   font-weight: 500;
   font-family: 'Open+Sans', sans-serif;
+}
+
+@media (max-width: 450px) {
+  .weather-card .date,
+  .weather-card .description {
+    font-size: 0.9em;
+  }
+  .weather-card .current .icon {
+    height: 96px;
+    width: 96px;
+  }
+  .weather-card .current .visual {
+    font-size: 3em;
+  }
+  .weather-card .future .oneday .icon {
+    height: 32px;
+    width: 32px;
+  }
 }
