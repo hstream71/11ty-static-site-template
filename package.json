@@ -10,10 +10,10 @@
     "dev": "eleventy --serve",
     "prebuild": "npm run clean",
     "build": "eleventy",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "predeploy-github": "npm run build",
+    "deploy-github": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "push": "git add -A & git commit -m \"wip\" & git push",
+    "deploy": "git add -A & git commit -m \"wip\" & git push",
     "dummy": ""
   },
   "keywords": [],

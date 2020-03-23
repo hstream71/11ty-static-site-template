@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="sv">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Static site template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Events</title>
   <meta name="description" content="">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -13,18 +15,46 @@
 <body>
   <main>
     <div class="content-container">
-      <header class="location">
+      <div class="location">
         <h2>Uppsala</h2>
-      </header>
-      <header class="day">
+      </div>
+      <div class="day">
         <h2>Måndag 23 Mars</h2>
-      </header>
-      <article>
-        <div class="post-title">Sirius - Malmö FF</div>
-        <div class="post-category">[Sport, Fotboll, Div 4 Uppland]</div>
+      </div>
+
+      <div class="post">
+        <div class="post-title">Gamla Uppsala - Vaksala FF</div>
         <div class="post-distance">1.3 km</div>
-        <div class="post-hide">Dölj...</div>
-      </article>
+        <div class="post-location">18.00, Studenternas, Uppsala</div>
+        <div class="post-category">
+          <button class="post-tag post-tag-on">Sport</button>
+          <button class="post-tag post-tag-on">Fotboll</button>
+          <button class="post-tag post-tag-off">Herr</button>
+          <button class="post-tag post-tag-off">Division 4</button> &nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="post-tag post-tag-on">Gratis</button>
+        </div>
+        <div class="post-more">Mer info...</div>
+      </div>
+
+      <div class="post">
+        <div class="post-title">Gamla Uppsala - Vaksala FF</div>
+        <div class="post-distance">1.3 km</div>
+        <div class="post-location">18.00, Studenternas, Uppsala</div>
+        <div class="post-category">
+          <button class="post-tag post-tag-on">Sport</button>
+          <button class="post-tag post-tag-on">Fotboll</button>
+          <button class="post-tag post-tag-on">Herr</button>
+          <button class="post-tag post-tag-on">Division 4</button> &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="post-more">
+          <button class="post-tag post-tag-on">Gratis</button>
+          <button class="post-tag post-tag-off">Mer info...</button>
+        </div>
+      </div>
+
+
+
+
     </div>
   </main>
   <script src="js/main.js"></script>

@@ -13,18 +13,16 @@ function getDistFromBottom() {
 }
 
 function createPost(index) {
-  var postElement = document.createElement('article')
+  var postElement = document.createElement('div')
+  postElement.classList.add('post');
 
   var title = document.createElement('h3');
   title.appendChild(document.createTextNode(index.toString()));
-  title.classList.add('title');
+  title.classList.add('post-title');
 
   var desc = document.createElement('div');
   desc.innerHTML = "text " + index.toString();
-  desc.classList.add('content');
-
-  var hrElem = document.createElement('hr');
-  hrElem.classList.add('separator');
+  desc.classList.add('post-content');
 
   postElement.appendChild(title);
   postElement.appendChild(desc);
