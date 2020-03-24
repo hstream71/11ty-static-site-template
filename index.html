@@ -1,15 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Static site template</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-    <h1>Static website template!</h1>
-    <script src="js/main.js"></script>
-    </body>
+
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Events</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="page-container">
+
+    <header class="top-header">
+
+      <nav class="top-nav page-outer">
+        <a href="#home">Logo</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleTopnav()"><i class="fa fa-bars"></i></a>
+      </nav>
+
+      <section class="top-search page-inner">
+        <form>
+          <input type="text" name="query" placeholder="Sök stad, ort eller plats" class="top-search">
+        </form>
+      </section>
+
+    </header>
+
+    <main class="search-results page-inner">
+      <header class="main-header">
+        <div class="search-location">
+          <h2>Uppsala, Uppsala kommun</h2>
+        </div>
+        <div class="search-distance">Distans
+        </div>
+        <div class="search-filters">Filter
+        </div>
+        <div class="search-results-found">12 evenemang hittade
+        </div>
+      </header>
+
+      <header class="event-date-header">
+        <h2>Måndag 23 Mars</h2>
+      </header>
+
+      <article class="event">
+        <header class="event-title">Gamla Uppsala - Vaksala FF Förening Med Långt Namn Som Tar Stor Plats</header>
+        <span class="event-distance">1.3 km</span>
+        <span class="event-location">18.00, Studenternas, Uppsala</span>
+        <section class="event-tags">
+          <button class="event-tag event-tag-on">Sport</button>
+          <button class="event-tag event-tag-on">Fotboll</button>
+          <button class="event-tag event-tag-on">Herr</button>
+          <button class="event-tag event-tag-off">Division 4</button>
+        </section>
+      </article>
+
+      <script src="js/main.js"></script>
+  </div>
+</body>
+
 </html>
